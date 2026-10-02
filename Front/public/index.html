@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0a0a23" />
+    <meta name="description" content="سامانه مدیریت هواپیمایی کارون - پیشرفته، مدرن و امن" />
+
+    <title>✈️ سامانه مدیریت هواپیمایی کارون</title>
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Google Fonts (Vazirmatn for Persian) -->
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet" />
+
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Vazirmatn', sans-serif;
+        background-color: #f9fafa;
+        color: #222;
+        direction:ltr;
+      }
+      #loader {
+        width: 100%;
+        height: 100vh;
+        background-color: #0a0a23;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .spinner {
+        width: 50px;
+        height: 50px;
+        border: 6px solid #ddd;
+        border-top: 6px solid #09f;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>برای استفاده از این سامانه نیاز به فعال بودن جاوااسکریپت دارید.</noscript>
+    <div id="loader">
+      <div class="spinner" title="در حال بارگذاری..."></div>
+    </div>
+    <div id="root" style="display: none;"></div>
+
+    <script>
+      // Hide loader after React mounts
+      window.addEventListener('load', () => {
+        document.getElementById('loader').style.display = 'none';
+        document.getElementById('root').style.display = 'block';
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+venv/
+/.idea
+# ==========================================
+# Tida-ERP Monorepo .gitignore
+# Standard Git Ignore for Python/FastAPI & Next.js
+# ==========================================
+.env
+.claude
+# Python / Backend
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Node / Frontend / Next.js
+Front/node_modules/
+node_modules/
+.npm/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+frontend/.next/
+.next/
+frontend/out/
+out/
+.turbo/
+
+# Media & User Uploads (keep directory structure)
+backend/media/documents/*
+!backend/media/documents/.gitkeep
+backend/media/messenger/*
+!backend/media/messenger/.gitkeep
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# OS Metadata
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs & Databases
+logs/
+*.log
+*.sqlite3
+*.db
+
+# Environment files with real credentials — NEVER commit these
+.env
+.env.dev
+.env.prod
+# Examples ARE committed (they contain no real values)
+# .env.dev.example  ← keep in git
+# .env.prod.example ← keep in git
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
